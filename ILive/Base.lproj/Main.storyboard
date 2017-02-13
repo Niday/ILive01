@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ps-Hs-ahQ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="K4X-jN-hq1"/>
+                                </constraints>
+                                <state key="normal" title="开始直播"/>
+                                <connections>
+                                    <action selector="Live:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cnz-ih-HZj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1l-ra-rGa">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="a0Z-GZ-CdT"/>
+                                </constraints>
+                                <state key="normal" title="观看直播"/>
+                                <connections>
+                                    <action selector="ShowLive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sM8-d0-DSM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ph-ez-cEV">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gx7-xy-sf6"/>
+                                </constraints>
+                                <state key="normal" title="ijkplayer测试"/>
+                                <connections>
+                                    <action selector="test:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ZM-GN-xPK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="v1l-ra-rGa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GlS-Md-ExF"/>
+                            <constraint firstItem="6ps-Hs-ahQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="NfW-RW-XWw"/>
+                            <constraint firstItem="6ps-Hs-ahQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T6C-es-W1I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Ph-ez-cEV" secondAttribute="trailing" constant="127" id="TEe-fL-Qg7"/>
+                            <constraint firstItem="6ps-Hs-ahQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="140" id="VOm-EE-GxY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="v1l-ra-rGa" secondAttribute="trailing" constant="140" id="eHi-h7-Icc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6ps-Hs-ahQ" secondAttribute="trailing" constant="140" id="fde-Lr-NwS"/>
+                            <constraint firstItem="v1l-ra-rGa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="140" id="h1Z-ic-uqx"/>
+                            <constraint firstItem="6Ph-ez-cEV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="127" id="tXx-SX-euo"/>
+                            <constraint firstItem="6Ph-ez-cEV" firstAttribute="top" secondItem="v1l-ra-rGa" secondAttribute="bottom" constant="40" id="y1Z-bM-afa"/>
+                            <constraint firstItem="v1l-ra-rGa" firstAttribute="top" secondItem="6ps-Hs-ahQ" secondAttribute="bottom" constant="40" id="z0X-hX-xWb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,17 @@
+PODS:
+  - LFLiveKit (2.5)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - LFLiveKit
+  - YYKit
+
+SPEC CHECKSUMS:
+  LFLiveKit: 4361bd588ae0c9244589119ccdb1c30d14686414
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 661856f76cbce4003640c3f3f53d99caec97da62
+
+COCOAPODS: 1.0.1
